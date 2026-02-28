@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import DashboardLayout from "./DashboardLayout";
-import { AttendanceDisputes } from "./dispute";
+import { AttendanceDisputes } from "./Dispute";
+
 
 
 

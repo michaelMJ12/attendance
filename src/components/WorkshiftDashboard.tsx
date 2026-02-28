@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import DashboardLayout from "./DashboardLayout";
-import { AttendanceWorkShift } from "./workshift";
+import { AttendanceWorkShift } from "./Workshift";
 
 
 
