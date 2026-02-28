@@ -1,0 +1,44 @@
+.dashboard-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 170px;
+  flex-shrink: 0;
+}
+
+.main {
+  flex: 1;           
+  min-width: 0;
+  overflow-y: auto;
+  padding: 24px 20px;
+}
+
+
+
+/* Mobile/tablet: hide by default */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none; /* hidden initially */
+    position: fixed; /* appear above content */
+    top: 50;
+    left: 0;
+    height: 100vh;
+    width: 140px;
+    z-index: 1000;
+  }
+
+  .sidebar.open {
+    display: block; /* show when toggle clicked */
+  }
+
+  .main {
+    padding: 20px 16px;
+    margin-left: 0; /* occupy full width */
+  }
+}
+
+

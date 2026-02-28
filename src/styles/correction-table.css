@@ -1,0 +1,200 @@
+/* Glass Card */
+.glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+}
+
+/* Card Wrapper */
+.corrections-card {
+  padding: 20px;
+  margin-top: 100px;
+}
+
+/* Header */
+.corrections-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.corrections-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #223381;
+}
+
+
+
+.corrections-header input {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  outline: none;
+  font-size: 14px;
+  width: 240px;
+}
+
+.corrections-header input::placeholder {
+  color: #9ca3af;
+}
+
+.corrections-header input:focus {
+  border-color: #4f7cff;
+  box-shadow: 0 0 0 3px rgba(79, 124, 255, 0.12);
+}
+
+/* Table Wrapper */
+.corrections-table-wrapper {
+  overflow-x: auto;
+}
+
+/* Table */
+.corrections-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.corrections-table thead {
+  background: rgba(34, 51, 129, 0.08);
+}
+
+.corrections-table th,
+.corrections-table td {
+  padding: 14px 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.corrections-table th {
+  color: #223381;
+  font-weight: 700;
+}
+
+.corrections-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.corrections-table tbody tr:hover {
+  background: rgba(34, 51, 129, 0.05);
+}
+
+/* Event Type Pills */
+.event-pill {
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.event-pill.check_in {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.event-pill.check_out {
+  background: #ede9fe;
+  color: #5b21b6;
+}
+
+/* Status */
+.status {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status.pending {
+  color: #f97316;
+}
+
+.status.approved {
+  color: #16a34a;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.actions .review {
+  background: #223381;
+  color: white;
+}
+
+.actions .delete {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+@media (max-width: 768px) {
+  .corrections-header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .corrections-table th,
+  .corrections-table td {
+    padding: 10px 8px;
+    font-size: 12px;
+  }
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 0;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #dbe3ff;
+  background: #f5f8ff;
+  color: #223381;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pagination button.active {
+  background: #8c87edfc;
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+
+
+.ok3 {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;            
+  width: 100%;
+  height: 100vh;     
+  overflow: hidden; /
+}

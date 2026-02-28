@@ -1,0 +1,211 @@
+/* ===============================
+   GLASS CARD (ENTERPRISE STYLE)
+   =============================== */
+.glass {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(14px);
+  border-radius: 16px;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  margin-left: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* ===============================
+   HEADER
+   =============================== */
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.table-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #223381; /* slate-800 */
+}
+
+.table-header input {
+  padding: 10px 14px;
+  width: 240px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  outline: none;
+  background: #ffffff;
+  color: #111827;
+  font-size: 14px;
+}
+
+.table-header input::placeholder {
+  color: #9ca3af;
+}
+
+.table-header input:focus {
+  border-color: #4f7cff;
+  box-shadow: 0 0 0 3px rgba(79, 124, 255, 0.12);
+}
+
+/* ===============================
+   TABLE
+   =============================== */
+.modern-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.modern-table thead th {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #6b7280; /* gray-500 */
+  padding: 14px 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.modern-table tbody td {
+  padding: 16px 12px;
+  color: #111827;
+  font-size: 14px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.modern-table tbody tr:hover {
+  background: #f8fafc;
+  
+}
+
+
+.modern-table thead th{
+ border-bottom: 2px solid #223381 ;
+}
+
+
+
+
+/* Text clamp */
+.truncate {
+  max-width: 260px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ===============================
+   STATUS / EVENT PILLS
+   =============================== */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pill.pending {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.pill.approved {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.pill.rejected {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.pill.event {
+  background: #eef2ff;
+  color: #3730a3;
+}
+
+/* ===============================
+   ACTION BUTTONS (PRO LEVEL)
+   =============================== */
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+/* Review */
+.btn.review {
+  color: #2563eb;
+  border-color: #dbeafe;
+}
+
+.btn.review:hover {
+  background: #eff6ff;
+}
+
+/* Update */
+.btn.update {
+  color: #0f766e;
+  border-color: #ccfbf1;
+}
+
+.btn.update:hover {
+  background: #f0fdfa;
+}
+
+/* Delete */
+.btn.delete {
+  color: #b91c1c;
+  border-color: #fee2e2;
+}
+
+.btn.delete:hover {
+  background: #fef2f2;
+}
+
+/* ===============================
+   PAGINATION
+   =============================== */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 22px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.pagination button {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #f9fafb;
+  border-color: #4f7cff;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,26 @@
+// look at this code , return (
+//     <div className="dashboard-container">
+//       {/* Sidebar */}
+//       <Sidebar isOpen={sidebarOpen} />
+
+//       {/* Main content */}
+//       <div className="dashboard-main">
+//         <DashboardLayout
+//           onToggleSidebar={() => setSidebarOpen(!sidebarOpen)}
+//         />
+//         <div className="" >
+//           <StatsLayout stats={stats} />
+//         </div>
+//         <MainLayout data={data} />
+//       </div>
+//     </div>
+//   );
+// };   i want at @Media(max-width:768px)  this disappear , <Sidebar isOpen={sidebarOpen} />   , then i should be leave with this only in column,  <div className="dashboard-main">
+//         <DashboardLayout
+//           onToggleSidebar={() => setSidebarOpen(!sidebarOpen)}
+//         />
+//         <div className="" >
+//           <StatsLayout stats={stats} />
+//         </div>
+//         <MainLayout data={data} />
+//       </div>  th

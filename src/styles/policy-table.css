@@ -1,0 +1,129 @@
+/* ================= MAIN CONTENT GRID ================= */
+.main-content {
+  padding: 24px;
+  background: #f4f6fb;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr; /* only table by default */
+  gap: 24px;
+  transition: all 0.25s ease;
+  width: 100%;
+}
+
+.main-content.show-form {
+  grid-template-columns: 1fr 320px; /* table flexible, form fixed */
+}
+
+/* ================= FORM COLUMN ================= */
+.form-column {
+  display: none; /* hide by default */
+}
+
+.main-content.show-form .form-column {
+  display: block;
+  width: 100%;
+  max-width: 320px; /* prevent overflow */
+}
+
+/* ================= GLASS FORM ================= */
+.glass-form {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(18px);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+  box-sizing: border-box;
+}
+
+/* FORM HEADER */
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* INPUTS */
+.glass-form input {
+  width: 100%; /* stretch inside form */
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.15);
+  margin-bottom: 12px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.glass-form input:focus {
+  border: 2px solid #223381;
+}
+
+/* FORM BUTTON */
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  background: #1a73e8;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* FLEX ROW FOR LABELS + INPUTS */
+.fix {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+label {
+  font-size: 12px;
+}
+
+.fix input {
+  width: 40px;
+}
+
+/* TABLE COLUMN */
+.table-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* TABLE ACTIONS */
+.create-btn {
+  background: #1a73e8;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.table-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.table-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #223381;
+}

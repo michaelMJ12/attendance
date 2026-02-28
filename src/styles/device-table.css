@@ -1,0 +1,160 @@
+.main-content {
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.72);
+  min-height: 100vh;
+  margin-top: 80px;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.table-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #223381;
+}
+
+.table-header input {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.15);
+  outline: none;
+}
+
+/* Glass container */
+.table-glass {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.4);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  overflow-x: auto;
+}
+
+/* Table */
+.glass-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.glass-table th,
+.glass-table td {
+  padding: 16px;
+  text-align: left;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #6b7280; /* gray-500 */
+  padding: 14px 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.glass-table thead {
+  background: rgba(255,255,255,0.7);
+}
+
+.glass-table th {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #223381;
+}
+
+.glass-table tbody tr {
+  transition: background 0.25s;
+}
+
+.glass-table tbody tr:hover {
+  background: rgba(0,0,0,0.04);
+}
+
+.glass-table tbody tr:not(:last-child) td {
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+/* Status */
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status.active {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status.offline {
+  background: #fdecea;
+  color: #c62828;
+}
+
+.status.maintenance {
+  background: #fff3cd;
+  color: #b26a00;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn.view {
+  background: #e3f2fd;
+}
+
+.btn.edit {
+  background: #ede7f6;
+}
+
+.btn.delete {
+  background: #fdecea;
+  color: #c62828;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.pagination button {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+
+.device{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;            
+  width: 100%;
+  height: 100vh;     
+  overflow: hidden; /
+}
