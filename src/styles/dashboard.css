@@ -22,8 +22,8 @@
 /* Mobile/tablet: hide by default */
 @media (max-width: 768px) {
   .sidebar {
-    display: none; /* hidden initially */
-    position: fixed; /* appear above content */
+    display: none; 
+    position: fixed; 
     top: 50;
     left: 0;
     height: 100vh;
@@ -32,12 +32,12 @@
   }
 
   .sidebar.open {
-    display: block; /* show when toggle clicked */
+    display: block; 
   }
 
   .main {
     padding: 20px 16px;
-    margin-left: 0; /* occupy full width */
+    margin-left: 0; 
   }
 }
 

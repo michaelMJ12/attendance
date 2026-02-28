@@ -42,8 +42,8 @@
 
   /* Center attendance card */
   .attendance-card {
-    max-width: 960px;          /* keeps it readable */
-    margin: 0 auto;            /* centers horizontally */
+    max-width: 960px;          
+    margin: 0 auto;            
     padding: 20px 16px;
   }
 }
