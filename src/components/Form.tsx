@@ -19,6 +19,7 @@ const Form: React.FC = () => {
     setError(null);
 
     const payload: AuthDto = { email, password };
+    console.log(payload)
 
     try {
       const data = await AuthLogin(payload);
@@ -30,6 +31,8 @@ const Form: React.FC = () => {
     } finally {
       setLoading(false);
     }
+
+    
   };
 
   return (
