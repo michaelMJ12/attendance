@@ -10,7 +10,7 @@ import type { ApiResponse, DeleteApiResponse,  LogoutApiResponse,  PaginatedResp
 
 
 
-const Auth_URL = "https://back-end-near.onrender.com/api/auth"
+const Auth_URL = "https://back-end-near.onrender.com/api/aut"
 
 
 const token = localStorage.getItem("get_token")
